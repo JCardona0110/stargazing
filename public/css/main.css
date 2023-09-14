@@ -6,10 +6,6 @@
   box-sizing: border-box;
 }
 
-@font-face {
-  font-family: "Tulpen One";
-  src: url("https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap");
-}
 /******************************************
 /* LAYOUT
 /*******************************************/
@@ -24,7 +20,6 @@ html {
 
 * {
   font-size: 3rem;
-  border: 1px black solid;
 }
 
 /******************************************
@@ -33,40 +28,83 @@ html {
 .title {
   display: flex;
   justify-content: center;
-  font-size: 5rem;
-  color: blue;
+  font-size: 8rem;
+  color: cornflowerblue;
 }
 
 .iframe {
-  width: 100%;
+  width: 500px;
   height: 500px;
 }
 
-.media {
-  width: 100%;
+.img {
+  width: 500px;
   height: 500px;
-  display: block;
-  margin: 0 auto;
+  display: none;
+}
+
+.media {
+  width: 500px;
+  height: 500px;
   padding: 5px;
+  display: flex;
+  justify-content: center;
 }
 
 .explanation {
   width: 100%;
   height: 500px;
-  display: block;
-  margin: 0 auto;
   padding: 5px;
-}
-
-h1 {
-  font-size: 5rem;
-  color: blue;
+  display: flex;
+  justify-content: center;
+  overflow: auto;
 }
 
 body {
   font-family: "Tulpen One";
 }
 
-.img {
-  width: 100%;
+.dateAndButton {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 20%;
+  margin: auto;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  background-color: cornflowerblue;
+}
+
+@media all and (width <= 480px) {
+  .dateAndButton {
+    width: 50%;
+    font-size: 2rem;
+  }
+  .explanation {
+    height: 205px;
+    font-size: 2rem;
+    padding: 0;
+    width: 96%;
+    margin: 5px;
+    text-align: center;
+  }
+  .title {
+    font-size: 3.25rem;
+    height: 25px;
+    width: 480px;
+    justify-content: center;
+  }
+  .media {
+    width: 480px;
+    padding-top: 50px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    padding: 10px 0 0 0;
+  }
+  html {
+    background-color: rgb(128, 92, 204);
+  }
 }

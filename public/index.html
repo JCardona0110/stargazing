@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta name="description" content="This is where your description goes" />
 		<meta name="keywords" content="one, two, three" />
 
@@ -13,26 +14,38 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
-			href="https://fonts.googleapis.com/css2?family=Tulpen+One&display=swap"
+			href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300&family=Exo+2&display=swap"
 			rel="stylesheet"
 		/>
+		<style>
+			.title {
+				font-family: "Alegreya Sans", sans-serif;
+			}
+			body {
+				font-family: "Exo 2", sans-serif;
+			}
+		</style>
 	</head>
-	<body>
+	<body class="responsive">
 		<header>
-			<h1 class="title">Stargazer Society</h1>
-			<h3 class="pick-date" class="explanation">
-				Pick a date to get the astronomy picture or video of the day
+			<h1 class="title">Stargazer Society APOD</h1>
+			<h3 class="explanation">
+				Ever wonder what was happening in our universe on a specific day? <br />
+				Pick a date to get the astronomy picture or video taken by NASA and find
+				out!
 			</h3>
+		</header>
+		<section class="swap">
 			<section class="dateAndButton">
 				<input class="hidden" type="date" name="" value="" id="myDate" />
 				<button class="button" class="hidden" type="button" name="button">
 					Get Astronomy
 				</button>
 			</section>
-		</header>
-		<section class="media">
-			<iframe class="iframe" src="" frameborder="0"></iframe>
-			<img class="img" src="" alt="" />
+			<section class="media">
+				<iframe class="iframe" src="" frameborder="0"></iframe>
+				<img class="img" src="" alt="" />
+			</section>
 		</section>
 
 		<script type="text/javascript" src="js/main.js"></script>
