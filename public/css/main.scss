@@ -45,8 +45,6 @@ html {
 .media {
 	width: 500px;
 	height: 500px;
-	display: block;
-	margin: 0 auto;
 	padding: 5px;
 	display: flex;
 	justify-content: center;
@@ -55,7 +53,6 @@ html {
 .explanation {
 	width: 100%;
 	height: 500px;
-	margin: 0 auto;
 	padding: 5px;
 	display: flex;
 	justify-content: center;
@@ -80,33 +77,33 @@ body {
 }
 
 //! media
-@media all and (width <= 320px) {
+@media all and (width <= 480px) {
 	.dateAndButton {
-		width: 300px;
-		padding: 30% 0 0 30%;
+		width: 50%;
 		font-size: 2rem;
 	}
 	.explanation {
-		height: 200px;
+		height: 205px;
 		font-size: 2rem;
+		padding: 0;
+		width: 96%;
+		margin: 5px;
+		text-align: center;
 	}
-	.media {
-		padding-top: 50px;
-	}
-	.swap {
-		display: flex;
-		flex-direction: column-reverse;
-	}
+
 	.title {
-		font-size: 5rem;
-		height: 60px;
-		width: 320px;
-		overflow: hidden;
-		object-fit: contain;
-		position: relative;
+		font-size: 3.25rem;
+		height: 25px;
+		width: 480px;
+		justify-content: center;
 	}
 	.media {
-		width: 320px;
-		height: auto;
+		width: 470px;
+		padding-top: 50px;
+		object-fit: cover;
+		padding: 10px 0 0 0;
+	}
+	html {
+		background-color: rebeccapurple;
 	}
 }
