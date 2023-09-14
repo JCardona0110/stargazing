@@ -98,7 +98,7 @@ body {
     justify-content: center;
   }
   .media {
-    width: 470px;
+    width: 480px;
     padding-top: 50px;
     -o-object-fit: cover;
        object-fit: cover;
