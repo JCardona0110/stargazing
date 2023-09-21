@@ -1,5 +1,6 @@
 ## Stargazer Society APOD: <a href="https://stargazer-apod.netlify.app" target="_blank">Check it out!</a>
-<a href="https://i.ibb.co/rxbbwrh/stargazer-gif.gif" target="_blank"> Quick example gif</a>
+<img src="https://github.com/JCardona0110/JCardona0110/blob/main/stargazer%20gif.gif" width="70%" alt="Stargazer APOD"/>
+</a>
 
 Stargazer Society APOD is a picture of the day generator utilizing the NASA APOD API  to show users a picture or video of what they saw that day in history.
 
